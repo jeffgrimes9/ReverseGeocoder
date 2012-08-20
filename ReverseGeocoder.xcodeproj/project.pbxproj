@@ -14,7 +14,10 @@
 		EC36893F15E300E000A2B5F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC36893E15E300E000A2B5F0 /* main.m */; };
 		EC36894315E300E000A2B5F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC36894215E300E000A2B5F0 /* AppDelegate.m */; };
 		EC36894615E300E000A2B5F0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC36894515E300E000A2B5F0 /* ViewController.m */; };
-		EC36894915E300E000A2B5F0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC36894715E300E000A2B5F0 /* ViewController.xib */; };
+		EC36895715E3018400A2B5F0 /* ReverseGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EC36895615E3015100A2B5F0 /* ReverseGeocoder.m */; };
+		EC36895815E3019000A2B5F0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC36895315E3013C00A2B5F0 /* ViewController.xib */; };
+		EC36895D15E301D400A2B5F0 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC36895915E301A800A2B5F0 /* AddressBook.framework */; };
+		EC36895E15E301DB00A2B5F0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC36895B15E301AC00A2B5F0 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +33,11 @@
 		EC36894215E300E000A2B5F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EC36894415E300E000A2B5F0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EC36894515E300E000A2B5F0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EC36894815E300E000A2B5F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		EC36895315E3013C00A2B5F0 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		EC36895515E3015100A2B5F0 /* ReverseGeocoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReverseGeocoder.h; sourceTree = "<group>"; };
+		EC36895615E3015100A2B5F0 /* ReverseGeocoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReverseGeocoder.m; sourceTree = "<group>"; };
+		EC36895915E301A800A2B5F0 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		EC36895B15E301AC00A2B5F0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC36895E15E301DB00A2B5F0 /* CoreLocation.framework in Frameworks */,
+				EC36895D15E301D400A2B5F0 /* AddressBook.framework in Frameworks */,
 				EC36893315E300E000A2B5F0 /* UIKit.framework in Frameworks */,
 				EC36893515E300E000A2B5F0 /* Foundation.framework in Frameworks */,
 				EC36893715E300E000A2B5F0 /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +76,8 @@
 		EC36893115E300E000A2B5F0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC36895915E301A800A2B5F0 /* AddressBook.framework */,
+				EC36895B15E301AC00A2B5F0 /* CoreLocation.framework */,
 				EC36893215E300E000A2B5F0 /* UIKit.framework */,
 				EC36893415E300E000A2B5F0 /* Foundation.framework */,
 				EC36893615E300E000A2B5F0 /* CoreGraphics.framework */,
@@ -81,8 +92,10 @@
 				EC36894215E300E000A2B5F0 /* AppDelegate.m */,
 				EC36894415E300E000A2B5F0 /* ViewController.h */,
 				EC36894515E300E000A2B5F0 /* ViewController.m */,
-				EC36894715E300E000A2B5F0 /* ViewController.xib */,
+				EC36895315E3013C00A2B5F0 /* ViewController.xib */,
 				EC36893915E300E000A2B5F0 /* Supporting Files */,
+				EC36895515E3015100A2B5F0 /* ReverseGeocoder.h */,
+				EC36895615E3015100A2B5F0 /* ReverseGeocoder.m */,
 			);
 			path = ReverseGeocoder;
 			sourceTree = "<group>";
@@ -149,8 +162,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC36895815E3019000A2B5F0 /* ViewController.xib in Resources */,
 				EC36893D15E300E000A2B5F0 /* InfoPlist.strings in Resources */,
-				EC36894915E300E000A2B5F0 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC36895715E3018400A2B5F0 /* ReverseGeocoder.m in Sources */,
 				EC36893F15E300E000A2B5F0 /* main.m in Sources */,
 				EC36894315E300E000A2B5F0 /* AppDelegate.m in Sources */,
 				EC36894615E300E000A2B5F0 /* ViewController.m in Sources */,
@@ -176,14 +190,6 @@
 				EC36893C15E300E000A2B5F0 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		EC36894715E300E000A2B5F0 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC36894815E300E000A2B5F0 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -1,6 +1,6 @@
 //
 //  ReverseGeocoder.h
-//  reversegeocoder
+//  ReverseGeocoder
 //
 //  Created by Jeff Grimes on 8/20/12.
 //  Copyright (c) 2012 Jeff Grimes. All rights reserved.
