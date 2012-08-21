@@ -41,8 +41,6 @@
 		EC36895915E301A800A2B5F0 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		EC36895B15E301AC00A2B5F0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		EC3BB41215E4302B00E76603 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		EC3BB41A15E437E400E76603 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
-		EC3BB42015E43B0B00E76603 /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon3.png; sourceTree = "<group>"; };
 		EC3BB43415E446BE00E76603 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,8 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				EC3BB43415E446BE00E76603 /* Default.png */,
-				EC3BB42015E43B0B00E76603 /* icon3.png */,
-				EC3BB41A15E437E400E76603 /* icon2.png */,
 				EC3BB41215E4302B00E76603 /* icon.png */,
 				EC36893815E300E000A2B5F0 /* ReverseGeocoder */,
 				EC36893115E300E000A2B5F0 /* Frameworks */,
